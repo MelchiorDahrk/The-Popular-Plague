@@ -1,7 +1,6 @@
 Merging plugins...
-Copying object to master: ACTI md24_anim_blow
-Copying object to master: SCPT md24_disable_delete
-Copying object to master: ACTI md24_anim_dance
+Copying object to master: ACTI md24_stop_dancing
+Copying object to master: ACTI md24_start_dancing
 Creating backup...
 Saving results...
 Finished!

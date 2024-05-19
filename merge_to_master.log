@@ -1,6 +1,49 @@
 Merging plugins...
-Copying object to master: ACTI md24_stop_dancing
-Copying object to master: ACTI md24_start_dancing
+Copying object to master: STAT md24_In_GoldSlopeLrgLong
+Copying object to master: STAT md24_In_GoldSlopeSmlConvexCorn
+Copying object to master: STAT md24_In_GoldCubeSml
+Copying object to master: STAT md24_In_GoldStepsLrg
+Copying object to master: STAT md24_In_GoldStepsLrgLong
+Copying object to master: STAT md24_In_GoldPlatLrgAngle
+Copying object to master: STAT md24_In_GoldPlatSmlAngle
+Copying object to master: STAT md24_In_GoldCylinder2048
+Copying object to master: STAT md24_In_GoldPlatSmlConvex
+Copying object to master: STAT md24_In_GoldPlatLrgCurve1024
+Copying object to master: STAT md24_In_GoldPlatSmlSquare
+Copying object to master: STAT md24_In_GoldPlatSmlStraight256
+Copying object to master: STAT md24_In_GoldCylinderSemi512
+Copying object to master: STAT md24_In_GoldSlopeLrg
+Copying object to master: STAT md24_In_GoldPlatLrgConvex
+Copying object to master: STAT md24_In_GoldPlatSmlStraight1536
+Copying object to master: STAT md24_In_GoldPlatLrgSquare
+Copying object to master: STAT md24_In_GoldPlatSmlCurve768
+Copying object to master: STAT md24_In_GoldColumnBase
+Copying object to master: STAT md24_In_GoldCylinderSemi1024
+Copying object to master: STAT md24_In_GoldPlatSmlCurve512
+Copying object to master: STAT md24_In_GoldSlopeLrgLongConvex
+Copying object to master: STAT md24_In_GoldColumnMid
+Copying object to master: STAT md24_In_GoldPlatSmlCurve1024
+Copying object to master: STAT md24_In_GoldPlatLrgConcave
+Copying object to master: STAT md24_In_GoldSlopeSmlConcaveCorn
+Copying object to master: CELL md24_Test
+Copying object to master: STAT md24_In_GoldCylinder512
+Copying object to master: STAT md24_In_GoldPlatLrgCurve512
+Copying object to master: STAT md24_In_GoldRailSmlStraight256
+Copying object to master: STAT md24_In_GoldPlatSmlConcave
+Copying object to master: STAT md24_In_GoldRailSmlStraight768
+Copying object to master: STAT md24_In_GoldSlopeSmlConcave
+Copying object to master: STAT md24_In_GoldStepsSml
+Copying object to master: STAT md24_In_GoldSlopeLrgLongConcave
+Copying object to master: STAT md24_In_GoldStepsSmlLong
+Copying object to master: STAT md24_In_GoldColumnCap
+Copying object to master: STAT md24_In_GoldCylinderOblongHole
+Copying object to master: STAT md24_In_GoldCylinder1024
+Copying object to master: STAT md24_In_GoldSlopeSmlAngle
+Copying object to master: STAT md24_In_GoldCubeLrg
+Copying object to master: STAT md24_In_GoldSlopeSmlConvex
+Copying object to master: STAT md24_In_GoldPlatLrgCurve768
+Copying object to master: STAT md24_In_GoldPlatSmlStraight768
+Copying object to master: STAT md24_In_GoldStepsShort
 Creating backup...
 Saving results...
 Finished!

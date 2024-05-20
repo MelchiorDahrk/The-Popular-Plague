@@ -1,49 +1,40 @@
 Merging plugins...
-Copying object to master: STAT md24_In_GoldSlopeLrgLong
-Copying object to master: STAT md24_In_GoldSlopeSmlConvexCorn
-Copying object to master: STAT md24_In_GoldCubeSml
-Copying object to master: STAT md24_In_GoldStepsLrg
-Copying object to master: STAT md24_In_GoldStepsLrgLong
-Copying object to master: STAT md24_In_GoldPlatLrgAngle
-Copying object to master: STAT md24_In_GoldPlatSmlAngle
-Copying object to master: STAT md24_In_GoldCylinder2048
-Copying object to master: STAT md24_In_GoldPlatSmlConvex
-Copying object to master: STAT md24_In_GoldPlatLrgCurve1024
-Copying object to master: STAT md24_In_GoldPlatSmlSquare
-Copying object to master: STAT md24_In_GoldPlatSmlStraight256
-Copying object to master: STAT md24_In_GoldCylinderSemi512
-Copying object to master: STAT md24_In_GoldSlopeLrg
-Copying object to master: STAT md24_In_GoldPlatLrgConvex
-Copying object to master: STAT md24_In_GoldPlatSmlStraight1536
-Copying object to master: STAT md24_In_GoldPlatLrgSquare
-Copying object to master: STAT md24_In_GoldPlatSmlCurve768
-Copying object to master: STAT md24_In_GoldColumnBase
-Copying object to master: STAT md24_In_GoldCylinderSemi1024
-Copying object to master: STAT md24_In_GoldPlatSmlCurve512
-Copying object to master: STAT md24_In_GoldSlopeLrgLongConvex
-Copying object to master: STAT md24_In_GoldColumnMid
-Copying object to master: STAT md24_In_GoldPlatSmlCurve1024
-Copying object to master: STAT md24_In_GoldPlatLrgConcave
-Copying object to master: STAT md24_In_GoldSlopeSmlConcaveCorn
-Copying object to master: CELL md24_Test
-Copying object to master: STAT md24_In_GoldCylinder512
-Copying object to master: STAT md24_In_GoldPlatLrgCurve512
-Copying object to master: STAT md24_In_GoldRailSmlStraight256
-Copying object to master: STAT md24_In_GoldPlatSmlConcave
-Copying object to master: STAT md24_In_GoldRailSmlStraight768
-Copying object to master: STAT md24_In_GoldSlopeSmlConcave
-Copying object to master: STAT md24_In_GoldStepsSml
-Copying object to master: STAT md24_In_GoldSlopeLrgLongConcave
-Copying object to master: STAT md24_In_GoldStepsSmlLong
-Copying object to master: STAT md24_In_GoldColumnCap
-Copying object to master: STAT md24_In_GoldCylinderOblongHole
-Copying object to master: STAT md24_In_GoldCylinder1024
-Copying object to master: STAT md24_In_GoldSlopeSmlAngle
-Copying object to master: STAT md24_In_GoldCubeLrg
-Copying object to master: STAT md24_In_GoldSlopeSmlConvex
-Copying object to master: STAT md24_In_GoldPlatLrgCurve768
-Copying object to master: STAT md24_In_GoldPlatSmlStraight768
-Copying object to master: STAT md24_In_GoldStepsShort
+Copying object to master: CLOT md24_c_ratcatcher
+Copying object to master: ACTI md24_actRealmWelcome
+Copying object to master: SCPT md24_bkScript
+Copying object to master: SCPT md24_actRealmScript
+Merging object to master: NPC_ md24_delphiara
+Copying object to master: CELL ToddTest
+Copying object to master: SCPT md24_danceStopScript
+Copying object to master: SCPT md24_delphiaraScript
+Copying object to master: ENCH md24_e_ratcatcher
+Copying object to master: SCPT md24_convoDelphiara
+Copying object to master: CELL Pelagiad, Murberius Harmevus' House
+Copying object to master: SCPT md24_delphRatsScript
+Copying object to master: MISC md24_misc_packagedRat
+Copying object to master: SCPT md24_danceStartScript
+Copying object to master: SCPT md24_convoCleanup
+Copying object to master: CREA md24_delphiaraRat
+Merging object to master: SCPT md24_globDiseaseScript
+Merging object to master: SCPT md24_ParadoxScale_s
+Merging object to master: SCPT md24_prupiusScript
+Copying object to master: md24_j_rockjoint
+Copying object to master: little secret
+Merging object to master: prupius danulus
+Merging object to master: delphiara
+Merging object to master: macaristic chorea
+Copying object to master: five diseased rats
+Merging object to master: md24_j_delphiara
+Copying object to master: little advice
+Copying object to master: rockjoint
+Copying object to master: md24_j_rats
+Merging object to master: md24_j_disease
+Copying object to master: two minor tasks
+Copying object to master: mages guild
+Copying object to master: background
+Copying object to master: latest rumors
+Merging object to master: greeting 0
+Copying object to master: my trade
 Creating backup...
 Saving results...
 Finished!

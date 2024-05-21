@@ -1,40 +1,29 @@
 Merging plugins...
-Copying object to master: CLOT md24_c_ratcatcher
-Copying object to master: ACTI md24_actRealmWelcome
-Copying object to master: SCPT md24_bkScript
-Copying object to master: SCPT md24_actRealmScript
-Merging object to master: NPC_ md24_delphiara
-Copying object to master: CELL ToddTest
-Copying object to master: SCPT md24_danceStopScript
-Copying object to master: SCPT md24_delphiaraScript
-Copying object to master: ENCH md24_e_ratcatcher
-Copying object to master: SCPT md24_convoDelphiara
-Copying object to master: CELL Pelagiad, Murberius Harmevus' House
-Copying object to master: SCPT md24_delphRatsScript
-Copying object to master: MISC md24_misc_packagedRat
-Copying object to master: SCPT md24_danceStartScript
-Copying object to master: SCPT md24_convoCleanup
-Copying object to master: CREA md24_delphiaraRat
-Merging object to master: SCPT md24_globDiseaseScript
-Merging object to master: SCPT md24_ParadoxScale_s
-Merging object to master: SCPT md24_prupiusScript
-Copying object to master: md24_j_rockjoint
-Copying object to master: little secret
-Merging object to master: prupius danulus
-Merging object to master: delphiara
-Merging object to master: macaristic chorea
-Copying object to master: five diseased rats
-Merging object to master: md24_j_delphiara
-Copying object to master: little advice
-Copying object to master: rockjoint
-Copying object to master: md24_j_rats
-Merging object to master: md24_j_disease
-Copying object to master: two minor tasks
-Copying object to master: mages guild
-Copying object to master: background
-Copying object to master: latest rumors
-Merging object to master: greeting 0
-Copying object to master: my trade
+Copying object to master: CELL The Eidolon of Purity
+Copying object to master: LIGH md24_Light_GlowOrbGold200
+Copying object to master: LIGH md24_Light@_Gold150
+Copying object to master: LIGH md24_Light@_Gold100
+Copying object to master: STAT md24_Ex_GoldPlanter
+Copying object to master: STAT md24_Furn_ContainmentWolf
+Merging object to master: CELL md24_Test
+Copying object to master: ACTI md24_Act_RealmSkybox
+Copying object to master: CONT md24_o_ComCrate02
+Copying object to master: STAT md24_Ex_GoldTower
+Copying object to master: CREA md24_nix-hound_dead
+Copying object to master: STAT md24_Flora_GoldBranch01
+Copying object to master: STAT md24_Furn_ContainmentNix
+Copying object to master: STAT md24_Furn_ContainmentNewt
+Copying object to master: STAT md24_Fx_RealmSkybox
+Copying object to master: CONT md24_o_ComCrate04
+Copying object to master: STAT md24_Ex_GoldPylon
+Copying object to master: CONT md24_o_ComCrate03
+Copying object to master: SCPT md24_RealmSkybox_s
+Copying object to master: DOOR md24_Door_Gold
+Copying object to master: LIGH md24_Light@_Gold200
+Copying object to master: STAT md24_Flora_GoldBranch02
+Copying object to master: STAT md24_Ex_GoldPavers
+Copying object to master: LEVI md24_lvl_WitchPos
+Copying object to master: CONT md24_o_ComCrate01
 Creating backup...
 Saving results...
 Finished!

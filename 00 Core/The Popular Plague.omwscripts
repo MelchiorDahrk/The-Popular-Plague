@@ -1,2 +1,3 @@
 ACTIVATOR: scripts/The-Popular-Plague/activator.lua
 NPC: scripts/The-Popular-Plague/npc.lua
+PLAYER: scripts/The-Popular-Plague/player.lua

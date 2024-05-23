@@ -28,7 +28,7 @@ local function onMusicSelectTrack(e)
     end
     local cell = tes3.getPlayerCell()
     if isEidolonCell(cell) then
-        e.music = "md24/The Golden Tower.mp3",
+        e.music = "md24/The Golden Tower.mp3"
         e.situation = tes3.musicSituation.explore
     end
 end

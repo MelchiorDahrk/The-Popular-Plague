@@ -11,7 +11,7 @@ local function onCellChanged(e)
     local wasEidolon = isEidolonCell(e.previousCell)
     if isEidolon and not wasEidolon then
         tes3.streamMusic({
-            path = "md24/The_Golden_Tower.mp3",
+            path = "md24/The Golden Tower.mp3",
             situation = tes3.musicSituation.explore,
         })
     end
@@ -26,8 +26,9 @@ local function onMusicSelectTrack(e)
     if e.situation == tes3.musicSituation.combat then
         return -- allow combat music to play as normal
     end
-    if cell.name = "The Golden Tower" then
-        e.music = "The_Golden_Tower.mp3"
+    local cell = tes3.getPlayerCell()
+    if isEidolonCell(cell) then
+        e.music = "md24/The Golden Tower.mp3",
         e.situation = tes3.musicSituation.explore
     end
 end

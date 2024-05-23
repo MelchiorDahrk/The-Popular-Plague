@@ -14,6 +14,8 @@ local function onCellChanged(e)
             path = "md24/The Golden Tower.mp3",
             situation = tes3.musicSituation.explore,
         })
+    elseif wasEidolon and not isEidolon then
+        tes3.skipToNextMusicTrack({ force = true })
     end
 end
 event.register("cellChanged", onCellChanged, { priority = 720 })

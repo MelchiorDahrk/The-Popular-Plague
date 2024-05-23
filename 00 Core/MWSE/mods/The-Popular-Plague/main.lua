@@ -1,6 +1,6 @@
 event.register("initialized", function()
 
-    if (mwse.buildDate == nil) or (mwse.buildDate < 20240524) then
+    if (mwse.buildDate == nil) or (mwse.buildDate < 20240522) then
         tes3.messageBox(
             "[The Popular Plague] Your MWSE is out of date!"
             .. " You will need to update to a more recent version to use this mod."

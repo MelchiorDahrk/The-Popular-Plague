@@ -1,29 +1,21 @@
 Merging plugins...
-Copying object to master: CELL The Eidolon of Purity
-Copying object to master: LIGH md24_Light_GlowOrbGold200
-Copying object to master: LIGH md24_Light@_Gold150
-Copying object to master: LIGH md24_Light@_Gold100
-Copying object to master: STAT md24_Ex_GoldPlanter
-Copying object to master: STAT md24_Furn_ContainmentWolf
-Merging object to master: CELL md24_Test
-Copying object to master: ACTI md24_Act_RealmSkybox
-Copying object to master: CONT md24_o_ComCrate02
-Copying object to master: STAT md24_Ex_GoldTower
-Copying object to master: CREA md24_nix-hound_dead
-Copying object to master: STAT md24_Flora_GoldBranch01
-Copying object to master: STAT md24_Furn_ContainmentNix
-Copying object to master: STAT md24_Furn_ContainmentNewt
-Copying object to master: STAT md24_Fx_RealmSkybox
-Copying object to master: CONT md24_o_ComCrate04
-Copying object to master: STAT md24_Ex_GoldPylon
-Copying object to master: CONT md24_o_ComCrate03
-Copying object to master: SCPT md24_RealmSkybox_s
-Copying object to master: DOOR md24_Door_Gold
-Copying object to master: LIGH md24_Light@_Gold200
-Copying object to master: STAT md24_Flora_GoldBranch02
-Copying object to master: STAT md24_Ex_GoldPavers
-Copying object to master: LEVI md24_lvl_WitchPos
-Copying object to master: CONT md24_o_ComCrate01
+Merging object to master: LIGH md24_Light_GlowOrbGold200
+Copying object to master: STAT md24_Ex_GoldRail256
+Copying object to master: STAT md24_Furn_ContainmentDevourer
+Copying object to master: ALCH md24_alc_DisAtaxia
+Copying object to master: ALCH md24_alc_DisRotbone
+Copying object to master: ALCH md24_alc_DisWitbane
+Copying object to master: ALCH md24_alc_DisDroops
+Copying object to master: STAT md24_Furn_ContainmentEmpty
+Copying object to master: STAT md24_Furn_ContainmentPort
+Copying object to master: STAT md24_Ex_GoldPlanterSmall
+Copying object to master: LIGH md24_Light@_Gold1000
+Copying object to master: STAT md24_Ex_GoldTowerBase
+Copying object to master: ALCH md24_alc_DisGreenspore
+Copying object to master: PGRD The Eidolon of Purity (0, 0)
+Copying object to master: ALCH md24_alc_DisCollywobbles
+Copying object to master: STAT md24_Ex_GoldDeco01
+Merging object to master: CELL The Eidolon of Purity
 Creating backup...
 Saving results...
 Finished!

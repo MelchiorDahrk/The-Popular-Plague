@@ -70,6 +70,20 @@ local function findActor(position)
 end
 
 
+local function blowKiss(ref)
+    if ref == nil then return end
+
+    local angle = ref.mobile:getViewToActor(tes3.mobilePlayer)
+    ref.facing = ref.facing + math.rad(angle)
+
+    tes3.playAnimation({
+        reference = ref,
+        mesh = "md24\\k\\blow_kiss.nif",
+        group = tes3.animationGroup.idle9,
+    })
+end
+
+
 --- Start/stop dancing animations when signaled.
 ---
 ---@param e referenceActivatedEventData
@@ -79,6 +93,9 @@ local function onReferenceActivated(e)
     end
     if e.reference.id == "md24_stop_dancing" then
         stopDancing(findActor(e.reference.position))
+    end
+    if e.reference.id == "md24_anim_blow" then
+        blowKiss(findActor(e.reference.position))
     end
 end
 event.register("referenceActivated", onReferenceActivated)

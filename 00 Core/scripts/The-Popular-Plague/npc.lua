@@ -37,6 +37,15 @@ local function stopDancing()
     animation.cancel(self, "bellydance")
 end
 
+local function blowKiss()
+    -- local player = nearby.players[1]
+    -- local dir = (player.position - self.position)
+    -- local angle = math.atan2(dir.x, dir.y)
+    -- local rotation = util.transform.rotateZ(angle)
+    -- self:teleport(self.cell, self.position, rotation)
+    animation.playBlended(self, "blowkiss", { priority = animation.PRIORITY.Scripted })
+end
+
 return {
     engineHandlers = {
         onUpdate = function(dt)
@@ -55,5 +64,6 @@ return {
     eventHandlers = {
         md24_start_dancing = startDancing,
         md24_stop_dancing = stopDancing,
+        md24_anim_blow = blowKiss,
     }
 }

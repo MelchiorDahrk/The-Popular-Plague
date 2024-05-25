@@ -17,6 +17,7 @@ Features:
 * Obtain the ability to go to and from Oblivion at will.
 * Collect 5 uniquely framed paintings
 * Over 75 new meshes and animations
+* Custom music track for The Eidolon cells
 * Potions of Disease?
 
 Installation:

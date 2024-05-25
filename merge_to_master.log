@@ -1,7 +1,21 @@
 Merging plugins...
-Copying object to master: DOOR md24_Door_Elevator
-Copying object to master: STAT md24_In_GoldElevatorChain
+Merging object to master: SCPT md24_alc_rotboScript
+Merging object to master: SCPT md24_alc_droopScript
+Merging object to master: ALCH md24_alc_DisAtaxia
+Merging object to master: ALCH md24_alc_DisRotbone
+Merging object to master: ALCH md24_alc_DisWitbane
+Merging object to master: SCPT md24_alc_collyScript
+Merging object to master: ALCH md24_alc_DisDroops
+Merging object to master: SCPT md24_alc_witbaScript
+Copying object to master: BOOK md24_bk_ReachDeco
+Merging object to master: SCPT md24_globDiseaseScript
+Merging object to master: ALCH md24_alc_DisGreenspore
+Merging object to master: SCPT md24_alc_greenScript
+Merging object to master: ALCH md24_alc_DisCollywobbles
 Merging object to master: CELL The Eidolon of Purity, Nadir
+Merging object to master: CELL The Eidolon of Purity
+Merging object to master: SCPT md24_alc_ataxiScript
+Merging object to master: two minor tasks
 Creating backup...
 Saving results...
 Finished!

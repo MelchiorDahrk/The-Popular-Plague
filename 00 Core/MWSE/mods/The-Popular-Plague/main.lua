@@ -7,7 +7,7 @@ event.register("initialized", function()
         )
     end
 
-    if tes3.isModActive("The Popular Plague.esm") then
+    if tes3.isModActive("The Popular Plague.esp") then
         require("The-Popular-Plague.music")
         require("The-Popular-Plague.quest")
     end

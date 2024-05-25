@@ -1,5 +1,12 @@
 Merging plugins...
-Copying object to master: SOUN md24_ElevatorLoop
+Copying object to master: SOUN md24_ScaleClose
+Copying object to master: ACTI md24_teleport_return
+Copying object to master: ACTI md24_Act_ParadoxScale_Exit
+Copying object to master: SOUN md24_ScaleLoop
+Merging object to master: CELL The Eidolon of Purity, Nexus
+Merging object to master: CELL Pelagiad (0, -7)
+Copying object to master: SCPT md24_ParadoxScale_Exit_s
+Copying object to master: SOUN md24_ScaleOpen
 Creating backup...
 Saving results...
 Finished!

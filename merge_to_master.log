@@ -1,12 +1,7 @@
 Merging plugins...
-Copying object to master: ACTI md24_In_TowerElevator
-Copying object to master: SCPT md24_towerElevatorScript
-Merging object to master: CELL pp_dungeon
-Copying object to master: STAT md24_In_GoldTower
-Copying object to master: CELL The Eidolon of Purity, Nadir
-Copying object to master: CELL The Eidolon of Purity, Nexus
-Copying object to master: PGRD The Eidolon of Purity, Nadir (0, 0)
-Merging object to master: CELL The Eidolon of Purity
+Merging object to master: ACTI md24_In_TowerElevator
+Merging object to master: SCPT md24_towerElevatorScript
+Merging object to master: CELL The Eidolon of Purity, Nexus
 Creating backup...
 Saving results...
 Finished!

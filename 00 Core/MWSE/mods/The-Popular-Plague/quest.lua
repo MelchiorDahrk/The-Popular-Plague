@@ -80,6 +80,7 @@ local function blowKiss(ref)
         reference = ref,
         mesh = "md24\\k\\blow_kiss.nif",
         group = tes3.animationGroup.idle9,
+        loopCount = 0,
     })
 end
 

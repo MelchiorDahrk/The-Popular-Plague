@@ -85,6 +85,19 @@ local function blowKiss(ref)
 end
 
 
+local function teleportExit()
+    local ref = tes3.getReference("md24_Furn_ParadoxScale")
+    if ref then
+        tes3.positionCell({
+            reference = tes3.player,
+            cell = ref.cell,
+            position = ref.position,
+            orientation = ref.orientation,
+        })
+    end
+end
+
+
 --- Start/stop dancing animations when signaled.
 ---
 ---@param e referenceActivatedEventData
@@ -97,6 +110,9 @@ local function onReferenceActivated(e)
     end
     if e.reference.id == "md24_anim_blow" then
         blowKiss(findActor(e.reference.position))
+    end
+    if e.reference.id == "md24_teleport_return" then
+        timer.start({ duration = 0.5, callback = teleportExit })
     end
 end
 event.register("referenceActivated", onReferenceActivated)

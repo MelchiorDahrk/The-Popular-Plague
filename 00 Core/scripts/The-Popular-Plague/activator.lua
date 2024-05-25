@@ -1,8 +1,7 @@
+local core = require("openmw.core")
 local self = require("openmw.self")
 local types = require("openmw.types")
 local nearby = require('openmw.nearby')
-
--- When created (via PlaceAtMe) find the associated actor and make them dance.
 
 if self.recordId == "md24_start_dancing" then
     for _, actor in ipairs(nearby.actors) do
@@ -36,3 +35,20 @@ if self.recordId == "md24_anim_blow" then
         end
     end
 end
+
+if self.recordId == "md24_teleport_return" then
+    core.sendGlobalEvent("md24_teleport_return")
+end
+
+return {
+    engineHandlers = {
+        onActive = function()
+            if self.recordId == "md24_furn_paradoxscale" then
+                core.sendGlobalEvent("md24_furn_paradoxscale", {
+                    cell = self.cell.name,
+                    position = self.position,
+                })
+            end
+        end,
+    }
+}

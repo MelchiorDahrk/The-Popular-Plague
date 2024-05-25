@@ -151,7 +151,3 @@ local function onCellChanged(e)
     end
 end
 event.register("cellChanged", onCellChanged)
-
-event.register("loaded", function()
-    tes3.setGlobal("md24_is_vanilla_engine", 1)
-end)

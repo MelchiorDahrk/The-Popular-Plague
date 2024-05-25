@@ -1,10 +1,10 @@
 The Popular Plague
 
 Team:
-AFFA - Questing, dialogue, and scripting
-Greatness7 - Scripting and animation
-Melchior Dahrk - Asset and Eidolon design
-Seelof - Nadir cell design
+AFFA
+Greatness7
+Melchior Dahrk
+Seelof
 
 Credits:
 domasx2 - elevator sound effect

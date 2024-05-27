@@ -12,6 +12,7 @@ if self.recordId == "md24_start_dancing" then
             end
         end
     end
+    self:remove()
 end
 
 if self.recordId == "md24_stop_dancing" then
@@ -23,6 +24,7 @@ if self.recordId == "md24_stop_dancing" then
             end
         end
     end
+    self:remove()
 end
 
 if self.recordId == "md24_anim_blow" then
@@ -34,10 +36,12 @@ if self.recordId == "md24_anim_blow" then
             end
         end
     end
+    self:remove()
 end
 
 if self.recordId == "md24_teleport_return" then
     core.sendGlobalEvent("md24_teleport_return")
+    self:remove()
 end
 
 return {

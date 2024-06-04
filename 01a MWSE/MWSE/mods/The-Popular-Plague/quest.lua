@@ -152,47 +152,35 @@ local function onCellChanged(e)
 end
 event.register("cellChanged", onCellChanged)
 
-
 local function getAnimationDuration(ref, group)
-    local timing = assert(tes3.getAnimationActionTiming({
-        reference = ref,
-        group = group,
-    }))
+    local timing = assert(tes3.getAnimationActionTiming({ reference = ref, group = group }))
     return timing["Stop"] - timing["Start"]
 end
 
-
-mwse.overrideScript("md24_towerElevatorScript", function() end)
-
--- timer.register("md24_elevator", function(e)
-
--- end)
-
 local function isAnimationLooping(ref, group)
-    local timings = tes3.getAnimationActionTiming({ reference = ref, group = group })
-    -- debug.log(inspect(timings))
-    if timings == nil then
-        return true
-    end
-
+    local currentTime = unpack(tes3.getAnimationTiming({ reference = ref }))
+    local timings = assert(tes3.getAnimationActionTiming({ reference = ref, group = group }))
     local loopStart = timings["Loop Start"] or 0
     local loopStop = timings["Loop Stop"] or 0
-
-    local time = unpack(tes3.getAnimationTiming({ reference = ref }))
-    -- debug.log(time)
-
     return (
-        (math.isclose(time, loopStart) or time >= loopStart)
-        and (math.isclose(time, loopStop) or time <= loopStop)
+        (math.isclose(currentTime, loopStart) or currentTime >= loopStart)
+        and (math.isclose(currentTime, loopStop) or currentTime <= loopStop)
     )
 end
 
-local function animationSkipToLoopSection(ref, group)
-    local timings = tes3.getAnimationActionTiming({ reference = ref, group = group })
-    assert(timings)
-
+local function animationSkipToEnd(ref, group)
+    local timings = assert(tes3.getAnimationActionTiming({ reference = ref, group = group }))
     tes3.setAnimationTiming({ reference = ref, group = group, timing = timings["Loop Start"] })
 end
+
+timer.register("md24:teleportNadir", function()
+    tes3.positionCell({
+        reference = tes3.player,
+        cell = "The Eidolon of Purity, Nadir",
+        position = { 2592, 4288, 6625 },
+        orientation = { 0, 0, 270 },
+    })
+end)
 
 ---@param e activateEventData
 local function onElevatorActivate(e)
@@ -236,6 +224,10 @@ local function onElevatorActivate(e)
                         end
                         if levels[group] == "Lower" then
                             tes3.playAnimation({ reference = e.target, group = transitions["Lower:Nadir"] })
+                            timer.start({
+                                duration = getAnimationDuration(e.target, transitions["Lower:Nadir"]),
+                                callback = "md24:teleportNadir",
+                            })
                         end
                     end,
                 },
@@ -263,7 +255,7 @@ local function onElevatorActivate(e)
                             tes3.messageBox("Skip to lower Nadir")
                             tes3.player.position.x = -1605
                         end
-                        animationSkipToLoopSection(e.target, group)
+                        animationSkipToEnd(e.target, group)
                     end,
                 },
                 {
@@ -274,3 +266,18 @@ local function onElevatorActivate(e)
     end
 end
 event.register("activate", onElevatorActivate)
+
+
+mwse.overrideScript("md24_towerElevatorScript", function()
+    local ref = tes3.mobilePlayer.collidingReference
+    if ref and ref.id == "md24_In_TowerElevator" then
+        local rayhit = tes3.rayTest({
+            position = tes3.getPlayerEyePosition(),
+            direction = { 0, 0, -1 },
+            root = ref.sceneCollisionRoot,
+        })
+        if rayhit then
+            tes3.player.position.z = rayhit.intersection.z
+        end
+    end
+end)

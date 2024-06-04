@@ -69,3 +69,4 @@ Changelog:
 * Disease spreading dialogue is now restricted to Pelagiad for compatibility.
 * ForceGreet removed to make quest start more voluntary.
 * Added Skyrim Style Quest Notifications (MWSE and OpenMW support)
+* Made elevator sound effect louder

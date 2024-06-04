@@ -1,0 +1,12 @@
+local ssqn = include("SSQN.interop")
+
+local function init()
+    if (ssqn) then
+	    ssqn.registerQIcon("md24_j_delphiara","\\Icons\\md24\\q\\quest_thepopularplague.tga")
+        ssqn.registerQIcon("md24_j_disease","\\Icons\\md24\\q\\quest_thepopularplague.tga")
+        ssqn.registerQIcon("md24_j_rats","\\Icons\\md24\\q\\quest_thepopularplague.tga")
+        ssqn.registerQIcon("md24_j_rockjoint","\\Icons\\md24\\q\\quest_thepopularplague.tga")
+    end
+end
+
+event.register(tes3.event.initialized, init)

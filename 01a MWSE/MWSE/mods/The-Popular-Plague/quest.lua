@@ -151,3 +151,36 @@ local function onCellChanged(e)
     end
 end
 event.register("cellChanged", onCellChanged)
+
+mwse.overrideScript("md24_towerElevatorScript", function() end)
+
+---@param e activateEventData
+local function onElevatorActivate(e)
+    if e.target.id ~= "md24_In_TowerElevator" then
+        return
+    elseif e.activator ~= tes3.player then
+        return
+    end
+    tes3ui.showMessageMenu({
+        message = "Use the elevator?",
+        buttons = {
+            {
+                text = "Go up",
+                callback = function()
+                    tes3.playAnimation({
+                        reference = e.target,
+                        group = tes3.animationGroup.idle2,
+                        loopCount = 0,
+                    })
+                end,
+            },
+            {
+                text = "Go down",
+            },
+            {
+                text = "Do nothing",
+            },
+        },
+    })
+end
+event.register("activate", onElevatorActivate)

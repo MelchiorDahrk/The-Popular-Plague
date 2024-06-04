@@ -152,7 +152,47 @@ local function onCellChanged(e)
 end
 event.register("cellChanged", onCellChanged)
 
+
+local function getAnimationDuration(ref, group)
+    local timing = assert(tes3.getAnimationActionTiming({
+        reference = ref,
+        group = group,
+    }))
+    return timing["Stop"] - timing["Start"]
+end
+
+
 mwse.overrideScript("md24_towerElevatorScript", function() end)
+
+-- timer.register("md24_elevator", function(e)
+
+-- end)
+
+local function isAnimationLooping(ref, group)
+    local timings = tes3.getAnimationActionTiming({ reference = ref, group = group })
+    -- debug.log(inspect(timings))
+    if timings == nil then
+        return true
+    end
+
+    local loopStart = timings["Loop Start"] or 0
+    local loopStop = timings["Loop Stop"] or 0
+
+    local time = unpack(tes3.getAnimationTiming({ reference = ref }))
+    -- debug.log(time)
+
+    return (
+        (math.isclose(time, loopStart) or time >= loopStart)
+        and (math.isclose(time, loopStop) or time <= loopStop)
+    )
+end
+
+local function animationSkipToLoopSection(ref, group)
+    local timings = tes3.getAnimationActionTiming({ reference = ref, group = group })
+    assert(timings)
+
+    tes3.setAnimationTiming({ reference = ref, group = group, timing = timings["Loop Start"] })
+end
 
 ---@param e activateEventData
 local function onElevatorActivate(e)
@@ -161,26 +201,76 @@ local function onElevatorActivate(e)
     elseif e.activator ~= tes3.player then
         return
     end
-    tes3ui.showMessageMenu({
-        message = "Use the elevator?",
-        buttons = {
-            {
-                text = "Go up",
-                callback = function()
-                    tes3.playAnimation({
-                        reference = e.target,
-                        group = tes3.animationGroup.idle2,
-                        loopCount = 0,
-                    })
-                end,
+
+    local group = tes3.getAnimationGroups({ reference = e.target })
+
+    local levels = {
+        [tes3.animationGroup.idle] = "Lower",
+        [tes3.animationGroup.idle2] = "Upper",
+        [tes3.animationGroup.idle3] = "Lower",
+        [tes3.animationGroup.idle4] = "Nadir",
+    }
+    local transitions = {
+        ["Lower:Upper"] = tes3.animationGroup.idle2,
+        ["Upper:Lower"] = tes3.animationGroup.idle3,
+        ["Lower:Nadir"] = tes3.animationGroup.idle4,
+    }
+
+    if isAnimationLooping(e.target, group) then
+        tes3ui.showMessageMenu({
+            message = "Use the elevator?",
+            buttons = {
+                {
+                    text = "Go up",
+                    callback = function()
+                        if levels[group] == "Lower" then
+                            tes3.playAnimation({ reference = e.target, group = transitions["Lower:Upper"] })
+                        end
+                    end,
+                },
+                {
+                    text = "Go down",
+                    callback = function()
+                        if levels[group] == "Upper" then
+                            tes3.playAnimation({ reference = e.target, group = transitions["Upper:Lower"] })
+                        end
+                        if levels[group] == "Lower" then
+                            tes3.playAnimation({ reference = e.target, group = transitions["Lower:Nadir"] })
+                        end
+                    end,
+                },
+                {
+                    text = "Do nothing",
+                },
             },
-            {
-                text = "Go down",
+        })
+    else
+        tes3ui.showMessageMenu({
+            message = "Skip to end?",
+            buttons = {
+                {
+                    text = "Yes",
+                    callback = function()
+                        if levels[group] == "Upper" then
+                            tes3.messageBox("Skip to upper levels")
+                            tes3.player.position.z = 8960
+                        end
+                        if levels[group] == "Lower" then
+                            tes3.messageBox("Skip to lower levels")
+                            tes3.player.position.z = -645
+                        end
+                        if levels[group] == "Nadir" then
+                            tes3.messageBox("Skip to lower Nadir")
+                            tes3.player.position.x = -1605
+                        end
+                        animationSkipToLoopSection(e.target, group)
+                    end,
+                },
+                {
+                    text = "No",
+                },
             },
-            {
-                text = "Do nothing",
-            },
-        },
-    })
+        })
+    end
 end
 event.register("activate", onElevatorActivate)

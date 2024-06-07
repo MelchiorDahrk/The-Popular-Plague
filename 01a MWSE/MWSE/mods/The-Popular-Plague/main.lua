@@ -1,5 +1,4 @@
 event.register("initialized", function()
-
     if (mwse.buildDate == nil) or (mwse.buildDate < 20240522) then
         tes3.messageBox(
             "[The Popular Plague] Your MWSE is out of date!"
@@ -8,7 +7,8 @@ event.register("initialized", function()
     end
 
     if tes3.isModActive("The Popular Plague.esp") then
-        require("The-Popular-Plague.music")
-        require("The-Popular-Plague.quest")
+        dofile("The-Popular-Plague.music")
+        dofile("The-Popular-Plague.quest")
+        dofile("The-Popular-Plague.ssqn")
     end
 end)

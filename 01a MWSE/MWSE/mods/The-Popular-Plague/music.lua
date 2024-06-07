@@ -15,6 +15,7 @@ local function onCellChanged(e)
             situation = tes3.musicSituation.explore,
         })
     elseif wasEidolon and not isEidolon then
+        ---@diagnostic disable-next-line: missing-fields
         tes3.skipToNextMusicTrack({ force = true })
     end
 end

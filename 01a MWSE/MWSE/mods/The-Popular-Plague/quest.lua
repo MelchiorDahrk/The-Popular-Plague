@@ -268,16 +268,16 @@ end
 event.register("activate", onElevatorActivate)
 
 
-mwse.overrideScript("md24_towerElevatorScript", function()
-    local ref = tes3.mobilePlayer.collidingReference
-    if ref and ref.id == "md24_In_TowerElevator" then
-        local rayhit = tes3.rayTest({
-            position = tes3.getPlayerEyePosition(),
-            direction = { 0, 0, -1 },
-            root = ref.sceneCollisionRoot,
-        })
-        if rayhit then
-            tes3.player.position.z = rayhit.intersection.z
-        end
-    end
-end)
+-- mwse.overrideScript("md24_towerElevatorScript", function()
+--     local ref = tes3.mobilePlayer.collidingReference
+--     if ref and ref.id == "md24_In_TowerElevator" then
+--         local rayhit = tes3.rayTest({
+--             position = tes3.getPlayerEyePosition(),
+--             direction = { 0, 0, -1 },
+--             root = ref.sceneCollisionRoot,
+--         })
+--         if rayhit then
+--             tes3.player.position.z = rayhit.intersection.z
+--         end
+--     end
+-- end)

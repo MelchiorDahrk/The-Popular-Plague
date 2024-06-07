@@ -70,3 +70,4 @@ Changelog:
 * ForceGreet removed to make quest start more voluntary.
 * Added Skyrim Style Quest Notifications (MWSE and OpenMW support)
 * Made elevator sound effect louder
+* Added custom banners to the tower interior.

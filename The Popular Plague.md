@@ -55,7 +55,7 @@ Changelog:
 * Initial Release
 1.1.0
 * Disease dialogue should no longer interfere with crime dialogue.
-* Guards, etc. have slightly more clear dialogue (in that they cannot receive the disease).
+* Guards, etc. have slightly clearer dialogue (in that they cannot receive the disease).
 * Prupius has a response for the Pelagiad topic.
 * Broadened Ygfa's greeting so it appears further along in the quest.
 * Delphiara is not longer marked as Essential.

@@ -58,7 +58,7 @@ Changelog:
 * Guards, etc. have slightly clearer dialogue (in that they cannot receive the disease).
 * Prupius has a response for the Pelagiad topic.
 * Broadened Ygfa's greeting so it appears further along in the quest.
-* Delphiara is not longer marked as Essential.
+* Delphiara is no longer marked as Essential.
 * Added disease dialogue to more guar.
 * Prupius drops his notes on the ground when you convince him to leave.
 * Delphiara no longer has Rockjoint and Five diseased rats topics available until you start her quest.

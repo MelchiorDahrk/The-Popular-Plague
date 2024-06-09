@@ -72,3 +72,6 @@ Changelog:
 * Made elevator sound effect louder
 * Added custom banners to the tower interior.
 * Added buttons at top and bottom of elevator to recall elevator.
+* Improved scales sound script
+* Updated rats script so the sacks get placed on the ground
+* Made the scales return you to the upper chamber after you have completed Delphiara's quest

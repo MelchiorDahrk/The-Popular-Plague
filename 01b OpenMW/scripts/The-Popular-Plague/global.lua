@@ -33,7 +33,7 @@ return {
                 local activeSpells = types.Actor.activeSpells(object)
                 local isDiseased = activeSpells:isSpellActive("md24_greatnewdisease")
                 local globalVariables = world.mwscript.getGlobalVariables(actor)
-                globalVariables.md24_globSpeakerState = isDiseased and 2 or 1
+                globalVariables.md24_globSpeakerState = isDiseased and 1 or 2
             end
         end
     },

@@ -171,7 +171,7 @@ local function onActivate(e)
     end
 
     if e.target.mobile.inCombat then
-        mwse.log("The-Popular-Plague: active is in combat bounds, not setting global variable (target=%s)", e.target)
+        mwse.log("The-Popular-Plague: actor is in combat, not setting global variable (target=%s)", e.target)
         return
     end
 

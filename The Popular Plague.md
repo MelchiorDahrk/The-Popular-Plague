@@ -65,7 +65,7 @@ Changelog:
 * Delphiara has a little new dialogue if you already have Corprus and the cure
 * Delphiara's rats now respawn in case you killed them
 * Fixed some typos
-* Fixed bug where player sometimes teleports to location of scales when loading the game
+* Fixed bug where player sometimes teleports to location of scales when loading the game in OpenMW
 * Disease spreading dialogue is now restricted to Pelagiad for compatibility
 * ForceGreet removed to make quest start more voluntary
 * Added Skyrim Style Quest Notifications (MWSE and OpenMW support)
@@ -76,3 +76,4 @@ Changelog:
 * Updated rats script so the sacks get placed on the ground
 * Made the scales return you to the upper chamber after you have completed Delphiara's quest
 * Improves directions to Prupius after he's moved to Murberius' house
+* Fixed bug where sometimes selecting a choice could cause issues with the dialogue window

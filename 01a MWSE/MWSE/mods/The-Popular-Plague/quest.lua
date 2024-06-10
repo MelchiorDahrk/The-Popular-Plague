@@ -151,3 +151,20 @@ local function onCellChanged(e)
     end
 end
 event.register("cellChanged", onCellChanged)
+
+
+--- Set a global variable for dialogue filtering when talking to a diseased npc.
+---
+---@param e uiActivatedEventData
+local function onDialogueMenuActivated(e)
+    local actor = tes3ui.getServiceActor()
+    local ref = actor and actor.reference
+
+    if ref.object.objectType ~= tes3.objectType.npc then
+        return
+    end
+
+    local md24_globSpeakerState = tes3.findGlobal("md24_globSpeakerState")
+    md24_globSpeakerState.value = isDiseased(ref) and 1 or 0
+end
+event.register("uiActivated", onDialogueMenuActivated, { filter = "MenuDialog" })

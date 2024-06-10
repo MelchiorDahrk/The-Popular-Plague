@@ -151,6 +151,7 @@ local function onCellChanged(e)
     end
 end
 event.register("cellChanged", onCellChanged)
+event.register("loaded", onCellChanged)
 
 
 --- Set a global variable for dialogue filtering when talking to a diseased npc.
@@ -165,18 +166,23 @@ local function onActivate(e)
 
     local index = tes3.getJournalIndex({ id = "md24_j_disease" })
     if (index < 15) or (index >= 100) then
+        print("The-Popular-Plauge: journal out of bounds, not setting global variable")
         return
     end
 
     if e.target.mobile.alarm ~= 0 then
+        print("The-Popular-Plauge: alarm out of bounds, not setting global variable")
         return
     end
 
     if e.activator.mobile.bounty > 100 then
+        print("The-Popular-Plauge: crimeLevel out of bounds, not setting global variable")
         return
     end
 
     local md24_globSpeakerState = tes3.findGlobal("md24_globSpeakerState")
     md24_globSpeakerState.value = isDiseased(e.target) and 1 or 2
+
+    mwse.log("The-Popular-Plauge: global variable set: %d", md24_globSpeakerState.value)
 end
 event.register("activate", onActivate)

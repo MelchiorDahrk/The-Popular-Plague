@@ -17,16 +17,19 @@ return {
             then
                 local index = getJournalIndex("md24_j_disease") or 0
                 if (index < 15) or (index >= 100) then
+                    print("The-Popular-Plauge: journal out of bounds, not setting global variable")
                     return
                 end
 
                 local alarm = types.Actor.stats.ai.alarm(object).modified
                 if alarm ~= 0 then
+                    print("The-Popular-Plauge: alarm out of bounds, not setting global variable")
                     return
                 end
 
                 local crimeLevel = types.Player.getCrimeLevel(actor)
                 if crimeLevel > 100 then
+                    print("The-Popular-Plauge: crimeLevel out of bounds, not setting global variable")
                     return
                 end
 
@@ -34,6 +37,7 @@ return {
                 local isDiseased = activeSpells:isSpellActive("md24_greatnewdisease")
                 local globalVariables = world.mwscript.getGlobalVariables(actor)
                 globalVariables.md24_globSpeakerState = isDiseased and 1 or 2
+                print(string.format("The-Popular-Plauge: global variable set: %d", globalVariables.md24_globSpeakerState))
             end
         end,
     },

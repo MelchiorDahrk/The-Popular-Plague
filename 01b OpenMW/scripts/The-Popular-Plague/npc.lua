@@ -2,7 +2,6 @@ local self = require("openmw.self")
 local types = require("openmw.types")
 local animation = require("openmw.animation")
 local interfaces = require("openmw.interfaces")
-local async = require("openmw.async")
 
 local function isBeast()
     local npc = types.NPC.records[self.recordId]

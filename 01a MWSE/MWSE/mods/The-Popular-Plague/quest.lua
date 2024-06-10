@@ -134,7 +134,7 @@ event.register("combatStarted", onCombatStarted)
 ---
 local function onCellChanged(e)
     local index = tes3.getJournalIndex({ id = "md24_j_disease" })
-    if (index == 0) or (index >= 50) then
+    if (index < 15) or (index >= 100) then
         return
     end
 
@@ -157,9 +157,21 @@ event.register("cellChanged", onCellChanged)
 ---
 ---@param e uiActivatedEventData
 local function onDialogueMenuActivated(e)
-    local actor = tes3ui.getServiceActor()
-    local ref = actor and actor.reference
+    local index = tes3.getJournalIndex({ id = "md24_j_disease" })
+    if (index < 15) or (index >= 100) then
+        return
+    end
 
+    if tes3.mobilePlayer.bounty > 100 then
+        return
+    end
+
+    local actor = tes3ui.getServiceActor()
+    if actor.alarm ~= 0 then
+        return
+    end
+
+    local ref = actor and actor.reference
     if ref.object.objectType ~= tes3.objectType.npc then
         return
     end

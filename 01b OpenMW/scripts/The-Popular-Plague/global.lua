@@ -4,12 +4,32 @@ local types = require('openmw.types')
 
 local data = storage.globalSection('The-Popular-Plague')
 
+local function getJournalIndex(id)
+    local quests = types.Player.quests(world.players[1])
+    return quests and quests[id] and quests[id].stage
+end
+
 return {
     engineHandlers = {
         onActivate = function(object, actor)
             if types.NPC.objectIsInstance(object)
                 and actor == world.players[1]
             then
+                local index = getJournalIndex("md24_j_disease") or 0
+                if (index < 15) or (index >= 100) then
+                    return
+                end
+
+                local alarm = types.Actor.stats.ai.alarm(object).modified
+                if alarm ~= 0 then
+                    return
+                end
+
+                local crimeLevel = types.Player.getCrimeLevel(actor)
+                if crimeLevel > 100 then
+                    return
+                end
+
                 local activeSpells = types.Actor.activeSpells(object)
                 local isDiseased = activeSpells:isSpellActive("md24_greatnewdisease")
                 local globalVariables = world.mwscript.getGlobalVariables(actor)

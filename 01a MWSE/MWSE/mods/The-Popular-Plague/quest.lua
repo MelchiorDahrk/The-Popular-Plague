@@ -177,6 +177,6 @@ local function onDialogueMenuActivated(e)
     end
 
     local md24_globSpeakerState = tes3.findGlobal("md24_globSpeakerState")
-    md24_globSpeakerState.value = isDiseased(ref) and 1 or 0
+    md24_globSpeakerState.value = isDiseased(ref) and 2 or 1
 end
 event.register("uiActivated", onDialogueMenuActivated, { filter = "MenuDialog" })

@@ -1,8 +1,8 @@
-local storage = require('openmw.storage')
-local world = require('openmw.world')
-local types = require('openmw.types')
+local storage = require("openmw.storage")
+local world = require("openmw.world")
+local types = require("openmw.types")
 
-local data = storage.globalSection('The-Popular-Plague')
+local data = storage.globalSection("The-Popular-Plague")
 
 local function getJournalIndex(id)
     local quests = types.Player.quests(world.players[1])
@@ -35,7 +35,7 @@ return {
                 local globalVariables = world.mwscript.getGlobalVariables(actor)
                 globalVariables.md24_globSpeakerState = isDiseased and 1 or 2
             end
-        end
+        end,
     },
     eventHandlers = {
         md24_furn_paradoxscale = function(e)
@@ -46,6 +46,6 @@ return {
             local cell = data:get("cell")
             local position = data:get("position")
             world.players[1]:teleport(cell, position)
-        end
-    }
+        end,
+    },
 }

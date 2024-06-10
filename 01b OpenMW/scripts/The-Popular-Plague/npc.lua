@@ -1,8 +1,8 @@
 local self = require("openmw.self")
 local types = require("openmw.types")
 local animation = require("openmw.animation")
-local interfaces = require('openmw.interfaces')
-local async = require('openmw.async')
+local interfaces = require("openmw.interfaces")
+local async = require("openmw.async")
 
 local function isBeast()
     local npc = types.NPC.records[self.recordId]
@@ -21,7 +21,7 @@ local function isCombatActive()
 end
 
 local function startDancing()
-    if true -- isDiseased() -- Note: commented out for easy testing
+    if isDiseased() -- Note: commented out for easy testing
         and not isBeast()
         and not isCombatActive()
     then
@@ -65,5 +65,5 @@ return {
         md24_start_dancing = startDancing,
         md24_stop_dancing = stopDancing,
         md24_anim_blow = blowKiss,
-    }
+    },
 }

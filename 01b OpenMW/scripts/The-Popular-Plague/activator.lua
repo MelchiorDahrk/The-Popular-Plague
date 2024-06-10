@@ -1,7 +1,7 @@
 local core = require("openmw.core")
 local self = require("openmw.self")
 local types = require("openmw.types")
-local nearby = require('openmw.nearby')
+local nearby = require("openmw.nearby")
 
 -- print(string.format("%s: enabled = %s", self.recordId, self.enabled))
 
@@ -52,5 +52,5 @@ return {
                 })
             end
         end,
-    }
+    },
 }

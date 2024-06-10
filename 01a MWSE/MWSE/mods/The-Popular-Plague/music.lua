@@ -1,6 +1,6 @@
 ---@parma cell tes3cell?
 local function isEidolonCell(cell)
-    return (cell ~= nil) and (cell.name:find("Eidolon") ~= nil)
+    return (cell ~= nil) and (cell.id:find("Eidolon") ~= nil)
 end
 
 --- When first entering an Eidolon, trigger our custom music.

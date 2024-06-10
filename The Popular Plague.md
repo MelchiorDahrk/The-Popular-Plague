@@ -54,24 +54,25 @@ Changelog:
 1.0.0
 * Initial Release
 1.1.0
-* Disease dialogue should no longer interfere with crime dialogue.
-* Guards, etc. have slightly clearer dialogue (in that they cannot receive the disease).
-* Prupius has a response for the Pelagiad topic.
-* Broadened Ygfa's greeting so it appears further along in the quest.
-* Delphiara is no longer marked as Essential.
-* Added disease dialogue to more guar.
-* Prupius drops his notes on the ground when you convince him to leave.
-* Delphiara no longer has Rockjoint and Five diseased rats topics available until you start her quest.
-* Delphiara has a little new dialogue if you already have Corprus and the cure.
-* Delphiara's rats now respawn in case you killed them.
-* Fixed some typos.
-* Fixed bug where player sometimes teleports to location of scales when loading the game.
-* Disease spreading dialogue is now restricted to Pelagiad for compatibility.
-* ForceGreet removed to make quest start more voluntary.
+* Disease dialogue should no longer interfere with crime dialogue
+* Guards, etc. have slightly clearer dialogue (in that they cannot receive the disease)
+* Prupius has a response for the Pelagiad topic
+* Broadened Ygfa's greeting so it appears further along in the quest
+* Delphiara is no longer marked as Essential
+* Added disease dialogue to more guar
+* Prupius drops his notes on the ground when you convince him to leave
+* Delphiara no longer has Rockjoint and Five diseased rats topics available until you start her quest
+* Delphiara has a little new dialogue if you already have Corprus and the cure
+* Delphiara's rats now respawn in case you killed them
+* Fixed some typos
+* Fixed bug where player sometimes teleports to location of scales when loading the game
+* Disease spreading dialogue is now restricted to Pelagiad for compatibility
+* ForceGreet removed to make quest start more voluntary
 * Added Skyrim Style Quest Notifications (MWSE and OpenMW support)
 * Made elevator sound effect louder
-* Added custom banners to the tower interior.
-* Added buttons at top and bottom of elevator to recall elevator.
+* Added custom banners to the tower interior
+* Added buttons at top and bottom of elevator to recall elevator
 * Improved scales sound script
 * Updated rats script so the sacks get placed on the ground
 * Made the scales return you to the upper chamber after you have completed Delphiara's quest
+* Improves directions to Prupius after he's moved to Murberius' house

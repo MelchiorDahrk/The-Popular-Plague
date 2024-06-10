@@ -3,9 +3,7 @@ local self = require("openmw.self")
 local types = require("openmw.types")
 local nearby = require('openmw.nearby')
 
-if not self.enabled then
-    return
-end
+-- print(string.format("%s: enabled = %s", self.recordId, self.enabled))
 
 if self.recordId == "md24_start_dancing" then
     for _, actor in ipairs(nearby.actors) do

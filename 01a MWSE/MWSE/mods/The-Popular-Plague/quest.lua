@@ -166,23 +166,18 @@ local function onActivate(e)
 
     local index = tes3.getJournalIndex({ id = "md24_j_disease" })
     if (index < 15) or (index >= 100) then
-        mwse.log("The-Popular-Plague: journal out of bounds, not setting global variable (target=%s)", e.target)
         return
     end
 
     if e.target.mobile.inCombat then
-        mwse.log("The-Popular-Plague: actor is in combat, not setting global variable (target=%s)", e.target)
         return
     end
 
     if e.activator.mobile.bounty > 100 then
-        mwse.log("The-Popular-Plague: crimeLevel out of bounds, not setting global variable (target=%s)", e.target)
         return
     end
 
     local md24_globSpeakerState = tes3.findGlobal("md24_globSpeakerState")
     md24_globSpeakerState.value = isDiseased(e.target) and 1 or 2
-
-    mwse.log("The-Popular-plague: global variable set: %d (target=%s)", md24_globSpeakerState.value, e.target)
 end
 event.register("activate", onActivate)

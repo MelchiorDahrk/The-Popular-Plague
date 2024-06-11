@@ -1,6 +1,6 @@
 # The Popular Plague
 Authors: AFFA, Greatness7, Melchior Dahrk, Seelof
-Version: 1.1.0
+Version: 1.1.1
 
 Made for the Morrowind May Modathon 2024
 Week 3 - Illusion & Infection
@@ -79,3 +79,5 @@ Then you are free to copy and redistribute the material for use in The Elder Scr
 * Made the scales return you to the upper chamber after you have completed Delphiara's quest
 * Improves directions to Prupius after he's moved to Murberius' house
 * Fixed bug where sometimes selecting a choice could cause issues with the dialogue window
+1.1.1
+* Removed debug messages

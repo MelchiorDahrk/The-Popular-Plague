@@ -16,7 +16,7 @@ return {
                 and actor == world.players[1]
             then
                 local index = getJournalIndex("md24_j_disease") or 0
-                if (index < 15) or (index >= 100) then
+                if (index < 15) then
                     return
                 end
 

@@ -1,6 +1,6 @@
 # The Popular Plague
 Authors: AFFA, Greatness7, Melchior Dahrk, Seelof
-Version: 1.1.1
+Version: 1.1.2
 
 Made for the Morrowind May Modathon 2024
 Week 3 - Illusion & Infection
@@ -53,8 +53,14 @@ If author(s) is/are not able to be contacted through a reasonable effort,
 Then you are free to copy and redistribute the material for use in The Elder Scrolls III: Morrowind
 
 ## Changelog:
-1.0.0
-* Initial Release
+1.1.2
+* Updated journal entry to indicate that you can infect NPCs while you have the disease
+* Made the disease unable to be removed by normal means
+* Updated Prupius' script so that he won't wander when he moves to the basement
+* NPCs can now be cured of the disease even after the quest has completed
+* Closed Delphiara's two quests if she is killed
+1.1.1
+* Removed debug messages
 1.1.0
 * Disease dialogue should no longer interfere with crime dialogue
 * Guards, etc. have slightly clearer dialogue (in that they cannot receive the disease)
@@ -79,5 +85,5 @@ Then you are free to copy and redistribute the material for use in The Elder Scr
 * Made the scales return you to the upper chamber after you have completed Delphiara's quest
 * Improves directions to Prupius after he's moved to Murberius' house
 * Fixed bug where sometimes selecting a choice could cause issues with the dialogue window
-1.1.1
-* Removed debug messages
+1.0.0
+* Initial Release

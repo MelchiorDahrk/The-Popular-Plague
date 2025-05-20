@@ -165,7 +165,7 @@ local function onActivate(e)
     end
 
     local index = tes3.getJournalIndex({ id = "md24_j_disease" })
-    if (index < 15) or (index >= 100) then
+    if (index < 15) then
         return
     end
 

@@ -59,6 +59,7 @@ Then you are free to copy and redistribute the material for use in The Elder Scr
 * Updated Prupius' script so that he won't wander when he moves to the basement
 * NPCs can now be cured of the disease even after the quest has completed
 * Closed Delphiara's two quests if she is killed
+* Cleaned dialogue
 1.1.1
 * Removed debug messages
 1.1.0

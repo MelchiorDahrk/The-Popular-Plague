@@ -47,8 +47,7 @@ return {
 
             if self.recordId == "md24_furn_paradoxscale" then
                 core.sendGlobalEvent("md24_furn_paradoxscale", {
-                    cell = self.cell.name,
-                    position = self.position,
+                    object = self.object,
                 })
             end
         end,

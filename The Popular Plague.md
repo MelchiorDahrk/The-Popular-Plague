@@ -1,6 +1,6 @@
 # The Popular Plague
 Authors: AFFA, Greatness7, Melchior Dahrk, Seelof
-Version: 1.1.2
+Version: 1.2.0
 
 Made for the Morrowind May Modathon 2024
 Week 3 - Illusion & Infection
@@ -53,6 +53,14 @@ If author(s) is/are not able to be contacted through a reasonable effort,
 Then you are free to copy and redistribute the material for use in The Elder Scrolls III: Morrowind
 
 ## Changelog:
+1.2.0
+* Improved skybox appearance
+* Smoother animations
+* Fixed one-sided collision in elevator for MGE XE
+* Optimized the Nadir cell
+* Fix openmw teleport locations not being save-specific
+* Disabled teleportation in The Eidolon
+* Fixed double-activating bug causing players to get trapped in The Eidolon
 1.1.2
 * Updated journal entry to indicate that you can infect NPCs while you have the disease
 * Made the disease unable to be removed by normal means

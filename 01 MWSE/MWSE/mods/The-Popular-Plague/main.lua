@@ -10,5 +10,6 @@ event.register("initialized", function()
         dofile("The-Popular-Plague.music")
         dofile("The-Popular-Plague.quest")
         dofile("The-Popular-Plague.ssqn")
+        dofile("The-Popular-Plague.achievements")
     end
 end)

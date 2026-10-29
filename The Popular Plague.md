@@ -53,6 +53,10 @@ If author(s) is/are not able to be contacted through a reasonable effort,
 Then you are free to copy and redistribute the material for use in The Elder Scrolls III: Morrowind
 
 ## Changelog:
+1.3.0
+* Can travel back to Eidolon with the sundial
+* Prevent player from clipping through skybox
+* Added 3 achievements (MWSE and OpenMW)
 1.2.0
 * Improved skybox appearance
 * Smoother animations
